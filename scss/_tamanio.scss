@@ -1,0 +1,23 @@
+$anchoLogoFooter:30px;
+$altoLogoFooter:30px;
+$anchofotoAsideBlog:300px;
+$altofotoAsideBlog:200px;
+$letraTitulo:50px;
+$letraParrafo:30px;
+$letraDescripcion:20px;
+$letraPrecios:20px;
+$altoFotoShop:100px;
+$anchoFotoShop:100px;
+$altoShopContainer:1300px;
+$anchoShopContainer:1500px;
+$altoImgProducto:300px;
+$anchoImgProducto:100%;
+$altoContainerPuntosVenta:1000px;
+$anchoContainerPuntosVenta:1200px;
+
+
+@mixin medidaCaja($width, $height) {
+    height: $height;
+    width: $width;
+ }
+ 

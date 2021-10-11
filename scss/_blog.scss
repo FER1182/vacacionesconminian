@@ -1,0 +1,55 @@
+.tituloBlog {
+    padding-top: 100px;
+    text-align: center;
+    .tituloBlogH1 {
+      color: $colorTituloPaginas;
+      font-family: $fontTituloPagina;
+    }
+  }
+
+  .containerBlog {
+    width: 100%;
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(5, 1fr);
+    .contentBlog {
+      text-align: center;
+      margin-top: 5px;
+      background-color: $fondoContenedoresBlog;
+      padding: 20px;
+      border: 1px solid black;
+      grid-column: span 3;
+    }
+    .sidebarBlog {
+      margin-top: 5px;
+      background-color: $fondoContenedoresBlog;
+      padding: 20px;
+      border: 1px solid black;
+      width: 90%;
+      grid-column: span 2;
+      .fotoBlog {
+        text-align: center;
+        .imgBlog {
+          width: $anchofotoAsideBlog;
+          height: $altofotoAsideBlog;
+        }
+      }
+    }
+    .publicacionesRelacionadas {
+      background-color: $fondoContenedoresBlog;
+      padding: 20px;
+      border: 1px solid black;
+      font-size: 15px;
+
+      a {
+        color: $colorH1;
+        text-decoration: none;
+        h2 {
+          font-size: 30px;
+          &:hover {
+            background: $fondoHover;
+          }
+        }
+      }
+    }
+  }

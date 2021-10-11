@@ -1,0 +1,71 @@
+header {
+    background-color: $fondoHeader;
+    position: fixed;
+
+    width: 100%;
+    height: 15%;
+    z-index: 3;
+    h1 {
+      color: $colorH1;
+      text-align: center;
+      font-family:'Bebas Neue', cursive;
+      animation-duration: 5s;
+      animation-name: ver;
+      @keyframes ver {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    }
+    .menuIndex {
+      height: 50 px;
+      background-color: $fondoHeader;
+      ul {
+        list-style: none;
+        font-size: 0;
+        text-transform: uppercase;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        ul {
+          position: absolute;
+          display: none;
+        }
+        ul {
+          li {
+            display: block;
+          }
+        }
+        li {
+          &:hover {
+            ul {
+              display: block;
+              background-color: black;
+            }
+          }
+        }
+        li {
+          display: inline-block;
+          text-align: center;
+          font-weight: bold;
+          padding: 0px 80px 0px 80px;
+          font-size: 30px;
+          position: relative;
+          a {
+            text-decoration: none;
+            color: rgb(37, 45, 61);
+            &:hover {
+              background: white;
+              color: darkgreen;
+              padding: 5px;
+            }
+          }
+        }
+      }
+    }
+  }

@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+  background-color: #1768ac;
+}
+body {
+  min-height: 100%;
+  font-family: "Mate SC", serif;
+  width: 100%;
+  height: 100%;
+  background-color: cornsilk;
+}
+header {
+  background-color: #03256c;
+  position: fixed;
+  width: 100%;
+  height: 15%;
+  z-index: 3;
+}
+h1 {
+  color: brown;
+  text-align: center;
+  font-family: "Pacifico", cursive;
+}
+ul {
+  list-style: none;
+  font-size: 0;
+  text-transform: uppercase;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+a {
+  text-decoration: none;
+  color: aqua;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+  text-align: center;
+  border-top: double;
+}
+table {
+  display: flex;
+  flex-direction: column;
+
+  flex: 1;
+}
+th {
+  color: crimson;
+  background-color: goldenrod;
+  text-transform: uppercase;
+}
+td {
+  background-color: #f1dfd1;
+  background-image: linear-gradient(315deg, #f1dfd1 0%, #f6f0ea 74%);
+}
+
+li {
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  padding: 0px 80px 0px 80px;
+  font-size: 18px;
+  position: relative;
+}
+ul li a:hover {
+  background: white;
+  color: darkgreen;
+  padding: 5px;
+}
+ul ul {
+  position: absolute;
+  display: none;
+}
+ul ul li {
+  display: block;
+}
+ul li:hover ul {
+  display: block;
+  background-color: black;
+}
+section {
+  background-color: white;
+  padding-top: 5px;
+  width: 100%;
+  text-align: center;
+}
+footer {
+  width: 100%;
+  list-style-type: none;
+  background-color: #e5d549;
+}
+
+/*CLASES*/
+
+.introduccion {
+  color: black;
+  font-size: 30px;
+}
+.fotoportada {
+  padding-top: 50px;
+  width: 20%;
+  align-items: center;
+  vertical-align: middle;
+  margin: 50px;
+  left: 10px;
+}
+.fotoportada:hover {
+  transform: scale(2, 2);
+}
+.videoNenas {
+  margin-left: 25%;
+  margin-top: 20px;
+}
+
+.fotoFooter {
+  width: 30px;
+  height: 30px;
+}
+.fotoIndex {
+  padding: 20px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.menuIndex {
+  height: 50 px;
+  background-color: #03256c;
+}
+.tituloLogo {
+  background-color: burlywood;
+}
+.historia {
+  font-size: 30px;
+}
+.contacto {
+  margin-top: 170px;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+.padreNenes {
+  display: flex;
+  flex-direction: row;
+  padding-top: 200px;
+  height: 99%;
+  margin-bottom: 100px;
+}
+@media (max-width: 576px) {
+  .padreNenes {
+    display: flex;
+    flex-direction: column;
+    padding-top: 200px;
+    width: 99%;
+    margin-bottom: 100px;
+  }
+}
+.carousel {
+  background: #1768ac;
+}
+.sizeCarrousel {
+  width: 800px;
+  margin-top: 120px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.botonCarousel {
+  background-color: gray;
+}
+.galeria {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1px 1px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "foto1 foto2 foto3"
+    "foto4 foto5 foto6"
+    "foto7 foto8 foto9";
+}
+.foto {
+  width: 100%;
+  height: 100%;
+}
+.foto1 {
+  grid-area: foto1;
+}
+.foto2 {
+  grid-area: foto2;
+}
+.foto3 {
+  grid-area: foto3;
+}
+.foto4 {
+  grid-area: foto4;
+}
+.foto5 {
+  grid-area: foto5;
+}
+.foto6 {
+  grid-area: foto6;
+}
+.foto7 {
+  grid-area: foto7;
+}
+.foto8 {
+  grid-area: foto8;
+}
+.foto9 {
+  grid-area: foto9;
+}
+
+.ulFooter {
+  list-style: none;
+  font-size: 0;
+  text-transform: uppercase;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.h5Footer {
+  font-size: 45px;
+  text-align: center;
+}
+.redes {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.redesLi {
+  padding: 10px;
+}
+
+.imgBlog {
+  width: 100px;
+  height: 100px;
+}
+.containerBlog {
+  width: 100%;
+  margin-top: 150px;
+
+  display: grid;
+  gap: 1em;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.publicacionesRelacionadas,
+.sidebarBlog {
+  background-color: blanchedalmond;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.contentBlog {
+  background-color: blanchedalmond;
+  padding: 5px;
+  border: 1px solid black;
+  grid-column: span 3;
+}
+.sidebarBlog {
+  width: 70%;
+  grid-column: span 2;
+}
+.publicacionesRelacionadas {
+  font-size: 5px;
+}
+.tituloPuntosVenta {
+  margin-top: 100px;
+}

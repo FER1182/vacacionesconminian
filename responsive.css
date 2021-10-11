@@ -1,0 +1,65 @@
+/*celular*/
+
+@media only screen and (max-width: 768px) {
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: yellow;
+    }
+    h1 {
+      color: red;
+      font-size: 18px;
+    }
+    .menuIndex {
+      width: 40%;
+      background-color: gainsboro;
+    }
+    header {
+      background-color: cornsilk;
+      
+  
+    }
+  
+    ul {
+      list-style: none;
+      font-size: 0;
+      text-transform: uppercase;
+      height: 40%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    .fotoIndex {
+      padding: 5px;
+      margin-top: 50px;
+      margin-left: 5px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  }
+  /*tablet*/
+  @media only screen and (min-width: 768px) {
+    body {
+      background-color: #000000;
+    }
+    h1 {
+      color: white;
+      font-size: 26px;
+    }
+  }
+  /*computadora*/
+  @media only screen and (min-width: 1024px) {
+    body {
+      background-color:#1768AC;
+    }
+    h1 {
+      color: #E5D549;
+      font-size: 36px;
+    }
+  }
+  
