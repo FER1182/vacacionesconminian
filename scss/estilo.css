@@ -1,0 +1,377 @@
+header {
+  background-color: #43d4c8;
+  position: fixed;
+  width: 100%;
+  height: 15%;
+  z-index: 3;
+}
+
+header h1 {
+  color: #2a2ca5;
+  text-align: center;
+  font-family: 'Bebas Neue', cursive;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-name: ver;
+          animation-name: ver;
+}
+
+@-webkit-keyframes ver {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes ver {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+header .menuIndex {
+  height: 50 px;
+  background-color: #43d4c8;
+}
+
+header .menuIndex ul {
+  list-style: none;
+  font-size: 0;
+  text-transform: uppercase;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header .menuIndex ul ul {
+  position: absolute;
+  display: none;
+}
+
+header .menuIndex ul ul li {
+  display: block;
+}
+
+header .menuIndex ul li:hover ul {
+  display: block;
+  background-color: black;
+}
+
+header .menuIndex ul li {
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  padding: 0px 80px 0px 80px;
+  font-size: 30px;
+  position: relative;
+}
+
+header .menuIndex ul li a {
+  text-decoration: none;
+  color: #252d3d;
+}
+
+header .menuIndex ul li a:hover {
+  background: white;
+  color: darkgreen;
+  padding: 5px;
+}
+
+.tituloBlog {
+  padding-top: 100px;
+  text-align: center;
+}
+
+.tituloBlog .tituloBlogH1 {
+  color: #CF0000;
+  font-family: "Bebas Neue", cursive;
+}
+
+.containerBlog {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  gap: 1em;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+}
+
+.containerBlog .contentBlog {
+  text-align: center;
+  margin-top: 5px;
+  background-color: #17ac62;
+  padding: 20px;
+  border: 1px solid black;
+  grid-column: span 3;
+}
+
+.containerBlog .sidebarBlog {
+  margin-top: 5px;
+  background-color: #17ac62;
+  padding: 20px;
+  border: 1px solid black;
+  width: 90%;
+  grid-column: span 2;
+}
+
+.containerBlog .sidebarBlog .fotoBlog {
+  text-align: center;
+}
+
+.containerBlog .sidebarBlog .fotoBlog .imgBlog {
+  width: 300px;
+  height: 200px;
+}
+
+.containerBlog .publicacionesRelacionadas {
+  background-color: #17ac62;
+  padding: 20px;
+  border: 1px solid black;
+  font-size: 15px;
+}
+
+.containerBlog .publicacionesRelacionadas a {
+  color: #2a2ca5;
+  text-decoration: none;
+}
+
+.containerBlog .publicacionesRelacionadas a h2 {
+  font-size: 30px;
+}
+
+.containerBlog .publicacionesRelacionadas a h2:hover {
+  background: #E1E5EA;
+}
+
+.ulFooter {
+  list-style: none;
+  font-size: 0;
+  text-transform: uppercase;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.ulFooter li {
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  padding: 0px 80px 0px 80px;
+  font-size: 18px;
+  position: relative;
+}
+
+.ulFooter li a {
+  text-decoration: none;
+  color: aqua;
+}
+
+footer .logo {
+  -webkit-transform: skewy(15deg);
+          transform: skewy(15deg);
+}
+
+footer .h5Footer {
+  font-size: 45px;
+  text-align: center;
+}
+
+footer .redes {
+  list-style: none;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+footer .redes .redesLi {
+  padding: 10px;
+}
+
+footer .redes .redesLi a .fotoFooter {
+  width: 30px;
+  height: 30px;
+}
+
+footer .redes .redesLi a .fotoFooter:hover {
+  width: 60px;
+  height: 60px;
+}
+
+footer .redes .redesLi a:hover .btn--ig {
+  border: 7px solid #8293a0;
+}
+
+footer .redes .redesLi a:hover .btn--twit {
+  border: 7px solid #55acee;
+}
+
+footer .redes .redesLi a:hover .btn--face {
+  border: 7px solid #3a5795;
+}
+
+footer .redes .redesLi a:hover .btn--mail {
+  border: 7px solid #C25E30;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: 0;
+          box-sizing: 0;
+}
+
+body {
+  min-height: 100%;
+  font-family: "Mate SC", serif;
+  width: 100%;
+  height: 100%;
+  background: url(../fotos/fondo.jpg) no-repeat center center fixed;
+}
+
+body .introduccion {
+  padding-top: 220px;
+  text-align: center;
+  color: #f8f8f8;
+  font-size: 30px;
+}
+
+body .historia {
+  text-align: center;
+  font-size: 30px;
+}
+
+body .cajaSaliente {
+  text-align: center;
+}
+
+body .carousel {
+  background: #7dd443;
+  padding-top: 2px;
+}
+
+body .carousel .sizeCarrousel {
+  width: 800px;
+  margin-top: 120px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body .carousel .botonCarousel {
+  background-color: gray;
+}
+
+body .galeria {
+  padding-top: 5px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  gap: 1px 1px;
+  grid-auto-flow: row;
+      grid-template-areas: "foto1 foto2 foto3"
+ "foto4 foto5 foto6"
+ "foto7 foto8 foto9";
+}
+
+body .galeria .foto {
+  width: 100%;
+  height: 100%;
+}
+
+body .galeria .foto1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: foto1;
+}
+
+body .galeria .foto2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: foto2;
+}
+
+body .galeria .foto3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: foto3;
+}
+
+body .galeria .foto4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: foto4;
+}
+
+body .galeria .foto5 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: foto5;
+}
+
+body .galeria .foto6 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: foto6;
+}
+
+body .galeria .foto7 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: foto7;
+}
+
+body .galeria .foto8 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: foto8;
+}
+
+body .galeria .foto9 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: foto9;
+}
+
+.row {
+  margin-top: 70px;
+  padding-top: 50px;
+}
+
+.row .imagen img {
+  width: 100%;
+  height: 250px;
+}
+/*# sourceMappingURL=estilo.css.map */
