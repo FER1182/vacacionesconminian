@@ -34,7 +34,7 @@
 
   ul {
     list-style: none;
-    font-size: 0;
+    font-size: 15px;
     text-transform: uppercase;
     height: 20%;
     display: flex;
